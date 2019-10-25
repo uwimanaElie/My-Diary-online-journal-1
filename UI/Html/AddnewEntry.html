@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="StyleSheet" type="text/css" href="../Css/style.css">
+   </head>
+   <body class="body">
+      <h3> Add New Entry</h3>
+      <div>
+         <div>
+            <label class="diaries">
+               <select name="Diary">
+               <option value="Personal Diary">Personal Diary</option>
+               <option value="Anonymous Diary">Anonymous Diary</option>
+               <option value="Diet Diary">Diet Diary</option>
+               <option value="Dream Diary">Dream Diary</option>
+               <option value="Love Diary">Love Diary</option>
+               <option value="Traver Diary">Traver Diary</option>
+               <option value="Fictional Diary">Fictional Diary</option>
+            </label>
+         </div>
+         <div>
+           <p>Date of Entry</p>
+        <input type="date" placeholder="DD/MM/YY" name="date"></input>
+            <label>Pen down New Entry</label>
+            <textarea type="text" name="New Entry" placeholder="your content here!" cols="10" rows="10"></textarea>
+         </div>
+         <br>
+         <div>
+            <button type="save-btn"><a href="Entries.html">Save Changes</a></button>
+            <button type="reset"><a href="Entries.html">Discard Changes</a></button>
+            <button type="reset" class="cancel-btn"><a href="#">Cancel</a></button>
+         </div>
+      </div>
+   </body>
+</html>
