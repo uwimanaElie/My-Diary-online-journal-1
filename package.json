@@ -1,0 +1,19 @@
+{
+  "name": "my-diary-online-journal-1",
+  "version": "1.0.0",
+  "description": "My Diary is an online journal for writting thoughts and feeling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwimanaElie/My-Diary-online-journal-1.git"
+  },
+  "author": "Elie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uwimanaElie/My-Diary-online-journal-1/issues"
+  },
+  "homepage": "https://github.com/uwimanaElie/My-Diary-online-journal-1#readme"
+}
