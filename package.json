@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/uwimanaElie/My-Diary-online-journal-1/issues"
   },
-  "homepage": "https://github.com/uwimanaElie/My-Diary-online-journal-1#readme"
+  "homepage": "https://github.com/uwimanaElie/My-Diary-online-journal-1#readme",
+  "dependencies": {
+    "eslint": "^6.6.0",
+    "eslint-auto-fix": "^1.0.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
 }
