@@ -25,4 +25,23 @@ class Entrymodel {
         return result;
 
     }
+    modifyEntry = (res, payload, id, token) => {
+        const { title, description } = payload
+        const anyEntry = this.entries.find(entry => entry.EntryId === parseInt(id, 10));
+        if (!anyEntry) {
+            return res.status(404).send({
+                status: 404,
+                error: 'This entry is not found',
+            })
+        }
+        if (anyEntry.useremail !== userEmail(token)) {
+            return res.status(403).send({
+                status: 403,
+                error: ' this entry is not yours'
+            })
+        }
+        anyEntry.title = title;
+        anyEntry.description = description;
+        return anyEntry;
+    }
 }
