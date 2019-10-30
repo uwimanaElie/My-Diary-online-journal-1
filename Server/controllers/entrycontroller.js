@@ -44,4 +44,15 @@ class Entrymodel {
         anyEntry.description = description;
         return anyEntry;
     }
-}
+    getEntries = (res, token) => {
+        const ownerEmail = userEmail(token);
+        const yourEntries = this.entries.filter(entry => entry.useremail === ownerEmail);
+        if (yourEntries.length === 0) {
+            return res.status(400).send({
+                status: 404,
+                error: 'Your entries are not available'
+
+            })
+        }
+    }
+    
