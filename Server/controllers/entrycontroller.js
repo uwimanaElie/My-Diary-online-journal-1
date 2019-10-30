@@ -55,4 +55,21 @@ class Entrymodel {
             })
         }
     }
+    getSingleEntry = (res, id, token) => {
+        const oneEntry = this.entries.find(entry => entry.EntryId === parseInt(id, 10));
+        console.log(oneEntry)
+        if (!oneEntry) {
+            return res.status(404).send({
+                status: 404,
+                error: 'This entry is not found',
+            })
+        }
+        if (oneEntry.useremail !== userEmail(token)) {
+            return res.status(403).send({
+                status: 403,
+                error: ' this entry is not yours'
+            })
+        }
+        return oneEntry.title;
+    }
     
